@@ -23,6 +23,6 @@ A `README.md` file containing:
   - A Project description
   - [Click here](http://festive-pare-54ca7d.bitballoon.com/) to see the Deployed App
   - [Click here](https://trello.com/b/LDTQNfIZ/jacksonwdifirstproject) to see my Trello Board that contains my user story management
-  - A Link to any Wirefames or Mockups (or inline photos / screenshots will work too!)
+  - [Click here](https://www.figma.com/file/S5iIuuhxgatPUC3BQSvDV7qb/Jackson-WDI-First-Project) to see the original mock-up of my project
   - A list of technologies, libraries, and/or frameworks used in the project, such as `Twitter Bootstrap`, `jQuery`, or `Animate.css`
   - What you would like to add in version 2
