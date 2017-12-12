@@ -39,7 +39,7 @@ header {
 .category-container {
     /* border: 1px solid white; */
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row-gap: 5px;
 }
 
@@ -47,7 +47,7 @@ header {
     background-color: #5C97BF;
     text-align: center;
     color: #FABE58;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .answer {
@@ -58,7 +58,27 @@ header {
     font-size: 1.5em;
 }
 
-.white-popup {
+a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    background-color: #5C97BF;
+}
+a:focus {
+    outline: none;
+}
+
+button {
+    width: 400px;
+    height: 60px;
+    background-color: #EC644B;
+    color: #E4F1FE;
+    border: none;
+    margin: 2px;
+    font-size: 1em;
+}
+
+.popup {
     position: relative;
     background: #5C97BF;
     color: #FABE58;
@@ -66,6 +86,6 @@ header {
     width:auto;
     max-width: 500px;
     margin: 20px auto;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
   }
