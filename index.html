@@ -6,14 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jackson's Jeopardy</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cleanslate/0.10.1/cleanslate.min.css" >
-
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">    
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <h1 class="header-text">Jackson's Jeopardy</h1>
     </header>
+    <!-- These are the popups (I moved them up here because the Bootstrap docs say to make them a top element-->
+
+    <div>
+        <div class="bs-example">
+            <div id="myModal" class="container-fluid modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title">Modal Window</h4>
+                        </div>
+                        <div class="modal-body">
+                        </div>
+                        <div class="modal-footer">
+                            <button id="closesubmit" type="button" class="btn btn-primary clickable" >Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>        
     <main class="main-container">
         <div class="side-container">
 
@@ -24,10 +46,10 @@
                     <h3>Colors that end in -urple</h3>
                 </div>
                 <div class="answer col1" id="100">
-                        <h3>100</h3>
+                    <button class="tile" data-toggle="modal" data-target="#myModal" data-num="0">100</button>
                 </div>
                 <div class="answer col1" id="200">
-                    <h3>200</h3>
+                    <button class="tile" data-toggle="modal" data-target="#myModal" data-num="1">200</button>
                 </div>
                 <div class="answer col1" id="300">
                     <h3>300</h2>
@@ -125,10 +147,12 @@
             <p class="score">$ 0</p>
         </div>
     </main>
-    <!-- These are the popups -->
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>    
     <script src="js/app.js"></script>
 </body>
 </html>
