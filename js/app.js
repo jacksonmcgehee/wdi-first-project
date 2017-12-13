@@ -248,11 +248,10 @@ $("#myModal").on('show.bs.modal', function(event) {
     fillModal(event, $('#myModal'))
 })
 
-if (window.matchMedia("(max-width: 400px)").matches) {
-    /* the viewport is at least 400 pixels wide */
-  } else {
-    /* the viewport is less than 400 pixels wide */
-  }
+$('#new-game').on('click', function(event) {
+    $('.intro-container').css('display', 'none')
+    $('.main-container').css('display', 'flex')
+})
 
 
 

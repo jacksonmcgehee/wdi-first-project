@@ -1,7 +1,5 @@
 
 
-
-
 body {
     background-color: #2C3E50;
     display: flex;
@@ -12,11 +10,10 @@ body {
 header {
     background-color: #EC644B;
     width: 100%;
-    height: 50px;
+    height: 80px;
     text-align: center;
     text-justify: center;
-    margin-top: 15px;
-    padding-top: 5px;
+    margin-top: 30px;
 }
 
 .player {
@@ -26,15 +23,12 @@ header {
 
 .header-text {
     color: #2C3E50;
-    font-size: 2em;
+    font-size: 4em;
 }
 
 .main-container {
     width: 100%;
     display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .intro-container {
@@ -64,22 +58,21 @@ header {
 }
 
 .side-container {
-    width: 100%;
+    width: 20%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 p {
     color: #E4F1FE;
-    font-size: 1.5em;
-    margin: 10px 8px 0 8px;
+    font-size: 2.75em;
 }
 
 .game-container {
-    width: 80%;
-    height: 80vh;
+    width: 60%;
+    height: 70vh;
     
     /* border: 1px solid white; */
     margin-top: 20px;
@@ -99,8 +92,9 @@ p {
     background-color: #5C97BF;
     text-align: center;
     justify-content: center;
-    padding-top:4px;
+    padding-top: 4px;
     color: #FABE58;
+    font-size: .8em;
 }
 
 h3 {
@@ -112,7 +106,7 @@ h3 {
     background-color: #5C97BF;
     text-align: center;
     color: #FABE58;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 a {
