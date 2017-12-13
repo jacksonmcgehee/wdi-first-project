@@ -65,95 +65,95 @@ const gameStuff = [
     },
     // Third Category
     {
-        givenAnswer: "This group is cooler than a polar bear's toenails.",
-        choices: [' Who is Goodie MOB', ' Who is OutKast', ' Who is 2Pac (RIP)', ' Who is Snow'],
+        givenAnswer: "This show included a young Joe Rogan as a clever maintenance man.",
+        choices: [' What is News Radio', ' What is Fraiser', ' What is Picket Fences', ' What is the Ben Stiller Show'],
         rightChoice: " What is News Radio",
         tileValue: 100
     },
     {
-        givenAnswer: "This group reached number 7 on the charts with 'Coolin' at tha Playground Ya Know!'",
-        choices: [' Who is Kris Kross', ' Who is Bel Biv Devoe', ' Who is Another Bad Creation', ' Who is Hanson'],
+        givenAnswer: "This TV show featured vibrant personified representations of the title character's psyche.",
+        choices: [' What is Profit', ' What is Lois & Clark', ' What is Dr. Quinn, Medicine Woman', " What is Herman's Head"],
         rightChoice: " What is Herman's Head",
         tileValue: 200
     },
     {
-        givenAnswer: "Jerry Glanville and the Atlanta Falcons made a cameo appearance in this music video.",
-        choices: [' What is Remember the Time', ' What is Too Legit To Quit', ' What is Slam', ' What is Gin and Juice'],
+        givenAnswer: "Jennifer Aniston had one of her earliest TV roles on this short-lived sketch comedy show.",
+        choices: [' What is Mad TV', ' What is In Living Color', ' What is The Edge', ' What is Idiot Box'],
         rightChoice: ' What is The Edge',
         tileValue: 300
     },
     {
-        givenAnswer: "E.D.I. Mean said this group was 'Softer than Alize with a chaser.'",
-        choices: [' Who is Lil Kim', ' Who is Bad Boy (As a staff, record label and crew)', ' Who is Mobb Deep', ' What is all of them'],
+        givenAnswer: "This is easily the greatest tween show Nickelodeon ever produced.'",
+        choices: [" What is You Can't Do That on Television", ' What is Legends of the Hidden Temple', ' What is Clarissa Explains It All', ' What is Salute Your Shorts'],
         rightChoice: " What is You Can't Do That on Television",
         tileValue: 400
     },
     {
-        givenAnswer: "This group had a member named Lil White that I met one time in a Hibbet's Sports in Rome, GA.",
-        choices: [' Who is ThreeSix Mafia', ' Who is 8Ball and MJG', ' Who is No Limit Records', ' Who is Boys II Men'],
+        givenAnswer: "The title character of this show had a sweet hideout accessed through his high school locker.",
+        choices: [' What is My So-Called Life', " What is Parker Lewis Can't lose", " What is Dawson's Creek", ' What is Freaks & Geeks'],
         rightChoice: " What is Parker Lewis Can't lose",
         tileValue: 500
     },
     // Fourth Category
     {
-        givenAnswer: "This group is cooler than a polar bear's toenails.",
-        choices: [' Who is Goodie MOB', ' Who is OutKast', ' Who is 2Pac (RIP)', ' Who is Snow'],
-        rightChoice: ' Who is OutKast',
+        givenAnswer: "This is not food.",
+        choices: [' What is apple', ' What is fruit cake', ' What is bread', ' What is cheese'],
+        rightChoice: ' What is fruit cake',
         tileValue: 100
     },
     {
-        givenAnswer: "This group reached number 7 on the charts with 'Coolin' at tha Playground Ya Know!'",
-        choices: [' Who is Kris Kross', ' Who is Bel Biv Devoe', ' Who is Another Bad Creation', ' Who is Hanson'],
-        rightChoice: ' Who is Another Bad Creation',
+        givenAnswer: "This is not food.",
+        choices: [' What is the Taco Bell menu', ' What is banana', ' What is steak', ' What is brocoli'],
+        rightChoice: ' What is the Taco Bell menu',
         tileValue: 200
     },
     {
-        givenAnswer: "Jerry Glanville and the Atlanta Falcons made a cameo appearance in this music video.",
-        choices: [' What is Remember the Time', ' What is Too Legit To Quit', ' What is Slam', ' What is Gin and Juice'],
-        rightChoice: ' What is Too Legit To Quit',
+        givenAnswer: "This is not food.",
+        choices: [' What is shrimp', ' What is carrot', ' What is the drawstring on your hoodie', ' What is kumquat'],
+        rightChoice: ' What is the drawstring on your hoodie',
         tileValue: 300
     },
     {
-        givenAnswer: "E.D.I. Mean said this group was 'Softer than Alize with a chaser.'",
-        choices: [' Who is Lil Kim', ' Who is Bad Boy (As a staff, record label and crew)', ' Who is Mobb Deep', ' What is all of them'],
-        rightChoice: ' What is all of them',
+        givenAnswer: "This is not food.",
+        choices: [' What is that thing you just picked up', ' What is dragon fruit', ' What is chicken breast', ' What is onion'],
+        rightChoice: ' What is that thing you just picked up',
         tileValue: 400
     },
     {
-        givenAnswer: "This group had a member named Lil White that I met one time in a Hibbet's Sports in Rome, GA.",
-        choices: [' Who is ThreeSix Mafia', ' Who is 8Ball and MJG', ' Who is No Limit Records', ' Who is Boys II Men'],
-        rightChoice: ' Who is ThreeSix Mafia',
+        givenAnswer: "This is not food.",
+        choices: [' What is spinach', ' What is turducken', ' What is pho', ' What is lamp'],
+        rightChoice: ' What is lamp',
         tileValue: 500
     },
     // Fifth Category
     {
-        givenAnswer: "This group is cooler than a polar bear's toenails.",
-        choices: [' Who is Goodie MOB', ' Who is OutKast', ' Who is 2Pac (RIP)', ' Who is Snow'],
-        rightChoice: ' Who is OutKast',
+        givenAnswer: "He is the only President from Louisiana.",
+        choices: [' Who is Millard Fillmore', ' Who is Jed Bartlet', ' Who is Jeff Davis', ' Who is Zachary Taylor'],
+        rightChoice: ' Who is Zachary Taylor',
         tileValue: 100
     },
     {
-        givenAnswer: "This group reached number 7 on the charts with 'Coolin' at tha Playground Ya Know!'",
-        choices: [' Who is Kris Kross', ' Who is Bel Biv Devoe', ' Who is Another Bad Creation', ' Who is Hanson'],
-        rightChoice: ' Who is Another Bad Creation',
+        givenAnswer: "He was the last member of the Whig Party elected to the White House.",
+        choices: [' Who is Millard Fillmore', ' Who is Frank Underwood', ' Who is John Tyler', ' Who is James Polk'],
+        rightChoice: ' Who is Millard Fillmore',
         tileValue: 200
     },
     {
-        givenAnswer: "Jerry Glanville and the Atlanta Falcons made a cameo appearance in this music video.",
-        choices: [' What is Remember the Time', ' What is Too Legit To Quit', ' What is Slam', ' What is Gin and Juice'],
-        rightChoice: ' What is Too Legit To Quit',
+        givenAnswer: "He oversaw the annexation of the Republic of Texas.",
+        choices: [' Who is Millard Fillmore', ' Who is David Palmer', ' Who is George W. Bush', ' Who is James Polk'],
+        rightChoice: ' Who is James Polk',
         tileValue: 300
     },
     {
-        givenAnswer: "E.D.I. Mean said this group was 'Softer than Alize with a chaser.'",
-        choices: [' Who is Lil Kim', ' Who is Bad Boy (As a staff, record label and crew)', ' Who is Mobb Deep', ' What is all of them'],
-        rightChoice: ' What is all of them',
+        givenAnswer: "He signed the Gadsden Purchase.",
+        choices: [' Who is Millard Fillmore', ' Who is Laura Roslin', ' Who is Franklin Pierce', ' Who is James Buchanan'],
+        rightChoice: ' Who is Franklin Pierce',
         tileValue: 400
     },
     {
-        givenAnswer: "This group had a member named Lil White that I met one time in a Hibbet's Sports in Rome, GA.",
-        choices: [' Who is ThreeSix Mafia', ' Who is 8Ball and MJG', ' Who is No Limit Records', ' Who is Boys II Men'],
-        rightChoice: ' Who is ThreeSix Mafia',
+        givenAnswer: "He was the first President to be born a U.S. citizen, but also the only to speak English as a second language.",
+        choices: [' Who is Millard Fillmore', ' Who is Jack Stanton', ' Who William Henry Harrison', ' Who is Martin Van Buren'],
+        rightChoice: ' Who is Martin Van Buren',
         tileValue: 500
     },
 ]
@@ -208,7 +208,7 @@ const gatherInfo = function (question) {
    let $div = $('<div class="radio">');
    
    question.choices.forEach(function(choice) {
-    iteration += 1;
+    //iteration += 1;
     // let $div = $(`<div class="radio">
     //                 <form class="btn btn-primary"></form>
     //                 <input type="radio" name="choices${iteration}" autocomplete="off" value="${choice}">`);
