@@ -26,21 +26,38 @@ $(".tile").on('click', function(event) {
 });
 
 const evaluateInput = function () {
-    console.log('Submit called the evaluate function');
-     
-    if ($('.modal-body input')) {
+    console.log('Check for input called evaluate input.')
+    let userAnswer = $('.modal-body input:checked').val();
+    console.log(userAnswer);
+    if (userAnswer === gameStuff[window.currentQuestion].rightChoice) {
+        playerScore += gameStuff[window.currentQuestion].tileValue
+        $('.score').html(`$ ${playerScore}`)
+        alert("That's correct!")
+        $('#myModal').modal("hide")
+    } else {
+        playerScore -= gameStuff[window.currentQuestion].tileValue
+        $('.score').html(`$ ${playerScore}`)
+        alert("Nope. That's not it.")
+        $('#myModal').modal("hide")
+    }
+      
+}
+
+const checkForInput = function () {
+    console.log('Submit called the check for input function');
+
+    if ($('.modal-body input:checked').val()) {
         console.log('If statement worked');
+        evaluateInput();
     } else {
         alert('Please select an answer.');
     }
 }
 
-
-
 $('#closesubmit').on('click', function(event) {
     console.log('Submit was clicked')
-    evaluateInput();
-    $('#myModal').modal("hide");
+    checkForInput();
+    
 })
  // Gather info from gameStuff array
 const gatherInfo = function (question) {
@@ -56,7 +73,7 @@ const gatherInfo = function (question) {
     // $div.append($form);
     // $buttonDiv.append($div);
     let $form = $('<form class="btn btn-primary"></form>');
-    let $input = $('<input type="radio" name="choices' + iteration + '" autocomplete="off" value="' + choice + '">');
+    let $input = $('<input type="radio" name="choices" autocomplete="off" value="' + choice + '">');
     $form.append($input);
     $form.append(choice);
     $div.append($form);
