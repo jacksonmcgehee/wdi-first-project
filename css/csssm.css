@@ -1,5 +1,7 @@
 
 
+
+
 body {
     background-color: #2C3E50;
     display: flex;
@@ -10,10 +12,11 @@ body {
 header {
     background-color: #EC644B;
     width: 100%;
-    height: 80px;
+    height: 30px;
     text-align: center;
     text-justify: center;
-    margin-top: 30px;
+    margin-top: 10px;
+    padding-top: 2px;
 }
 
 .player {
@@ -23,43 +26,47 @@ header {
 
 .header-text {
     color: #2C3E50;
-    font-size: 4em;
+    font-size: 1.25em;
 }
 
 .main-container {
     width: 100%;
-    display: flex;
-}
-
-.side-container {
-    width: 20%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.side-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 p {
     color: #E4F1FE;
-    font-size: 2.75em;
+    font-size: 1.25em;
+    margin: 2px 2px 0 2px;
 }
 
 .game-container {
-    width: 60%;
-    height: 70vh;
+    width: 90%;
     
     /* border: 1px solid white; */
-    margin-top: 20px;
+    margin-top: 8px;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-column-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
 }
 
 .category-container {
     /* border: 1px solid white; */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-row-gap: 5px;
+    grid-row-gap: 3px;
 }
 
 .category {
@@ -68,7 +75,10 @@ p {
     justify-content: center;
     padding-top: 8px;
     color: #FABE58;
-    font-size: 1em;
+}
+
+h3 {
+    font-size: 1.4em;
 }
 
 .answer {
@@ -76,7 +86,7 @@ p {
     background-color: #5C97BF;
     text-align: center;
     color: #FABE58;
-    font-size: 1.5em;
+    font-size: 1.15em;
 }
 
 a {

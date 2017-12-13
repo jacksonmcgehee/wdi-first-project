@@ -8,7 +8,10 @@
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">    
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="all" href="css/style.css">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="css/cssmid.css" />
+    <link rel="stylesheet" media="(max-width: 750px)" href="css/csssm.css" />
+    <link rel="stylesheet" media="(max-width: 450px)" href="css/cssxsm.css" />
 </head>
 <body>
     <header class="header">
@@ -38,7 +41,8 @@
     </div>        
     <main class="main-container">
         <div class="side-container">
-
+            <p class="score-title">Score</p>
+            <p class="score">$ 0</p>
         </div>
         <div class="game-container">
             <div class="category-container" >
@@ -63,7 +67,7 @@
             </div>
             <div class="category-container" >
                 <div class="category" id="category2">
-                    <h3>90s<br/>Hip-Hop</h3>
+                    <h3>90s Hip-Hop</h3>
                 </div>
                 <div class="answer">
                     <button class="tile" data-toggle="modal" data-target="#myModal" data-num="5">100</button>
@@ -103,7 +107,7 @@
             </div>
             <div class="category-container" >
                 <div class="category" id="category4">
-                    <h3>Not<br/>Food</h3>
+                    <h3>Not Food</h3>
                 </div>
                 <div class="answer">
                     <button class="tile" data-toggle="modal" data-target="#myModal" data-num="15">100</button>
@@ -123,7 +127,7 @@
             </div>
             <div class="category-container" >
                 <div class="category" id="category5">
-                    <h3>POTUS in<br/>1800s</h3>
+                    <h3>POTUS in 1800s</h3>
                 </div>
                 <div class="answer">
                     <button class="tile" data-toggle="modal" data-target="#myModal" data-num="20">100</button>
@@ -143,8 +147,7 @@
             </div>
         </div>
         <div class="side-container">
-            <p class="score-title">Score</p>
-            <p class="score">$ 0</p>
+            
         </div>
     </main>
 
