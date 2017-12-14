@@ -24,5 +24,7 @@ A `README.md` file containing:
   - [Click here](http://festive-pare-54ca7d.bitballoon.com/) to see the Deployed App
   - [Click here](https://trello.com/b/LDTQNfIZ/jacksonwdifirstproject) to see my Trello Board that contains my user story management
   - [Click here](https://www.figma.com/file/S5iIuuhxgatPUC3BQSvDV7qb/Jackson-WDI-First-Project) to see the original mock-up of my project
-  - A list of technologies, libraries, and/or frameworks used in the project, such as `Twitter Bootstrap`, `jQuery`, or `Animate.css`
+  - Tchnologies and libraries I used:
+    - I used Bootstrap to create the modal that presents the clue and response options to the user. It helped me learn how to create and deploy a modal, but caused a lot of extra work to override the Bootstrap styling I did not want to keep. Next time I will create my own modal.
+    
   - What you would like to add in version 2
