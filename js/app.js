@@ -169,29 +169,36 @@ $(".tile").on('click', function(event) {
     $(event.target).remove()
 });
 
+// ---- This block was my attempt to re-build the game without refreshing the page (refreshing the page would have shown the user the welcome screen again, which I wanted to avoid)
+        // const reloadGame = function () {
+        //     $('.outro-container').css('display', 'none')
+        //     playerScore = 0
+        //     roundsPlayed = 0
+        //     $('button').add('.tile')
+        //     $('.main-container').css('display', 'flex')
+        // }
 
-// const reloadGame = function () {
-//     $('.outro-container').css('display', 'none')
-//     playerScore = 0
-//     roundsPlayed = 0
-//     $('button').add('.tile')
-//     $('.main-container').css('display', 'flex')
-// }
 
-// const right = function() {
-//     $.notify("That's correct!", "success", { position:"top center" })
-// }
+// ---- This block was an attempt to replace alerts with a notification plugin
+        // const right = function() {
+        //     $.notify("That's correct!", "success", { position:"top center" })
+        // }
 
-// const wrong = function() {
-//     $.notify("Nope. That's not it.", "error", { position:"top center" })
-// }
+        // const wrong = function() {
+        //     $.notify("Nope. That's not it.", "error", { position:"top center" })
+        // }
+
+
 
 const playAgain = function() {
+    // --- Commented out parts are a part of the attempt described above
     // $('.outro-container').css('display', 'flex')
     // $('.main-container').css('display', 'none')
     location.reload()
 }
 
+
+//Looks to see if there are any clues remaining
 const gameOver = function () {
     roundsPlayed += 1
     if (roundsPlayed >= 25) {
@@ -202,6 +209,8 @@ const gameOver = function () {
     }
 }
 
+
+//Evaluates the answer and adds or deducts the appropriate value from the score and displays it to the user
 const evaluateInput = function () {
     //console.log('Check for input called evaluate input.')
     let userAnswer = $('.modal-body input:checked').val()
@@ -228,6 +237,8 @@ const evaluateInput = function () {
       
 }
 
+
+//Ensures the user actually provided an answer
 const checkForInput = function () {
     //console.log('Submit called the check for input function');
 
@@ -239,6 +250,7 @@ const checkForInput = function () {
     }
 }
 
+//Actions when user clicks submit in the modal
 $('#closesubmit').on('click', function(event) {
     //console.log('Submit was clicked')
     checkForInput()
@@ -266,7 +278,7 @@ const gatherInfo = function (question) {
    });
    return $buttonDiv
  }
-//Fill the modal with gathered info
+//Fills the modal with gathered info
  function fillModal(event, $modal) {
    let button = $(event.relatedTarget)
    let num = parseInt(button.data('num'))
@@ -276,10 +288,13 @@ const gatherInfo = function (question) {
    $modal.find('.modal-body').empty().append(gatherInfo(question))
  }
 
+//Toggles the modal on and calls the fill function
 $("#myModal").on('show.bs.modal', function(event) {
     fillModal(event, $('#myModal'))
 })
 
+
+//Click event from landing page to game play
 $('#new-game').on('click', function(event) {
     $('.intro-container').css('display', 'none')
     $('.main-container').css('display', 'flex')
