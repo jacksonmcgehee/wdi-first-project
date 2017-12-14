@@ -20,7 +20,7 @@ The objectives of this project are to:
 Please [click here](/project_assignment_README.md) to see a more detailed description of the assignment.
 
 A `README.md` file containing:
-  - A Project description
+  - My project is a one player game in the style of Jeopardy. The user selects one of five clues from one of five categories. After answering, the monetary value of the clue is added or subtracted from the player's score.
   - [Click here](http://festive-pare-54ca7d.bitballoon.com/) to see the Deployed App
   - [Click here](https://trello.com/b/LDTQNfIZ/jacksonwdifirstproject) to see my Trello Board that contains my user story management
   - [Click here](https://www.figma.com/file/S5iIuuhxgatPUC3BQSvDV7qb/Jackson-WDI-First-Project) to see the original mock-up of my project
