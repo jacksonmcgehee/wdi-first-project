@@ -35,6 +35,6 @@ A `README.md` file containing:
     - Replace the alerts with notifications that do not require the user to dismiss or close
 
   - Major takeaways:
-    - **I did not commit enough**; I would change multiple lines of code on multiple files before I would remember to commit
+    - **I did not commit enough**; I would change multiple lines of code on multiple files before I would remember to commit; also, once I felt I had an MVP, I stopped commiting while I experimented with features; next time I will start a new branch as soon as I have an MVP, and work on icebox user stories in the new branch
     - **My knowledge grew quickly**; As I learned new features and techniques, I realized that implimentation would have been better/easier with a different html structure
     - **I did not focus on my user stories well enough**; I found that I would bounce between solutions or fixes for user stories as I learned new methods
