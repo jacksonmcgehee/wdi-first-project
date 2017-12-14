@@ -26,5 +26,6 @@ A `README.md` file containing:
   - [Click here](https://www.figma.com/file/S5iIuuhxgatPUC3BQSvDV7qb/Jackson-WDI-First-Project) to see the original mock-up of my project
   - Tchnologies and libraries I used:
     - I used Bootstrap to create the modal that presents the clue and response options to the user. It helped me learn how to create and deploy a modal, but caused a lot of extra work to override the Bootstrap styling I did not want to keep. Next time I will create my own modal.
-    
+    - I used jQuery 3.2.1
+    - I tried to use a plugin called notify.js to create an alternative to the alerts that inform the user if the answer was correct or incorrect, but I belive it would work more cleanly without Bootsrap. 
   - What you would like to add in version 2
