@@ -28,4 +28,8 @@ A `README.md` file containing:
     - I used Bootstrap to create the modal that presents the clue and response options to the user. It helped me learn how to create and deploy a modal, but caused a lot of extra work to override the Bootstrap styling I did not want to keep. Next time I will create my own modal.
     - I used jQuery 3.2.1
     - I tried to use a plugin called notify.js to create an alternative to the alerts that inform the user if the answer was correct or incorrect, but I belive it would work more cleanly without Bootsrap. 
-  - What you would like to add in version 2
+  - In Version 2, I would like to add:
+    - Randomized categories so it is possible to play the game again without the same questions
+    - Two player mode
+    - In the mobile and tablet layouts, initially only the categories will be visible, and hidden clues toggle to visible when the user selects a category
+    - Replace the alerts with notifications that do not require the user to dismiss or close
