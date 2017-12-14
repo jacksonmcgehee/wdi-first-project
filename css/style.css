@@ -57,6 +57,32 @@ header {
     margin-top: 40px;
 }
 
+.outro-container {
+    width: 60%;
+    height: 70vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px;
+}
+
+.outro-container h1 {
+    color: #E4F1FE;
+    font-size: 2.75em;
+}
+
+.outro-container p {
+    color: #E4F1FE;
+    font-size: 1.75em;
+    text-align: center;
+}
+.outro-container button {
+    width: 300px;
+    height: 60px;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
 .side-container {
     width: 20%;
     display: flex;

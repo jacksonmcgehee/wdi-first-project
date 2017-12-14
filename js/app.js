@@ -166,31 +166,63 @@ let roundsPlayed = 0
 
 // Remove tile after selection
 $(".tile").on('click', function(event) {
-    $(event.target).remove();
+    $(event.target).remove()
 });
+
+
+// const reloadGame = function () {
+//     $('.outro-container').css('display', 'none')
+//     playerScore = 0
+//     roundsPlayed = 0
+//     $('button').add('.tile')
+//     $('.main-container').css('display', 'flex')
+// }
+
+const right = function() {
+    $.notify("That's correct!", "success", { position:"top center" })
+}
+
+// const wrong = function() {
+//     $.notify("Nope. That's not it.", "error", { position:"top center" })
+// }
+
+const playAgain = function() {
+    // $('.outro-container').css('display', 'flex')
+    // $('.main-container').css('display', 'none')
+    location.reload()
+}
 
 const gameOver = function () {
     roundsPlayed += 1
     if (roundsPlayed >= 25) {
         alert(`You answered them all! Your final haul is $ ${playerScore}.`)
+        // $('.outro-container').css('display', 'flex')
+        // $('.main-container').css('display', 'none')
+        playAgain()
     }
 }
 
 const evaluateInput = function () {
     //console.log('Check for input called evaluate input.')
-    let userAnswer = $('.modal-body input:checked').val();
+    let userAnswer = $('.modal-body input:checked').val()
     //console.log(userAnswer);
     if (userAnswer === gameStuff[window.currentQuestion].rightChoice) {
         playerScore += gameStuff[window.currentQuestion].tileValue
         $('.score').html(`$ ${playerScore}`)
-        alert("That's correct!")
+        //alert("That's correct!")
+
+        
         $('#myModal').modal("hide")
+        right()
         gameOver()
     } else {
         playerScore -= gameStuff[window.currentQuestion].tileValue
         $('.score').html(`$ ${playerScore}`)
-        alert("Nope. That's not it.")
+        //alert("Nope. That's not it.")
+       
         $('#myModal').modal("hide")
+        //wrong()
+        $.notify("Nope. That's not it.", "error", { position:"top center" })
         gameOver()
     }
       
@@ -225,14 +257,14 @@ const gatherInfo = function (question) {
     //                 <input type="radio" name="choices${iteration}" autocomplete="off" value="${choice}">`);
     // $div.append($form);
     // $buttonDiv.append($div);
-    let $form = $('<form class="btn btn-primary"></form>');
+    let $form = $('<form class="btn btn-primary"></form>')
     let $input = $('<input type="radio" name="choices" autocomplete="off" value="' + choice + '">')
     $form.append($input)
     $form.append(choice)
     $div.append($form)
     $buttonDiv.append($div)
    });
-   return $buttonDiv;
+   return $buttonDiv
  }
 //Fill the modal with gathered info
  function fillModal(event, $modal) {
@@ -252,6 +284,10 @@ $('#new-game').on('click', function(event) {
     $('.intro-container').css('display', 'none')
     $('.main-container').css('display', 'flex')
 })
+
+// $('#again-game').on('click', function(event) {
+//     reloadGame()
+// })
 
 
 
