@@ -178,9 +178,9 @@ $(".tile").on('click', function(event) {
 //     $('.main-container').css('display', 'flex')
 // }
 
-const right = function() {
-    $.notify("That's correct!", "success", { position:"top center" })
-}
+// const right = function() {
+//     $.notify("That's correct!", "success", { position:"top center" })
+// }
 
 // const wrong = function() {
 //     $.notify("Nope. That's not it.", "error", { position:"top center" })
@@ -209,20 +209,20 @@ const evaluateInput = function () {
     if (userAnswer === gameStuff[window.currentQuestion].rightChoice) {
         playerScore += gameStuff[window.currentQuestion].tileValue
         $('.score').html(`$ ${playerScore}`)
-        //alert("That's correct!")
+        alert("That's correct!")
 
         
         $('#myModal').modal("hide")
-        right()
+        //right()
         gameOver()
     } else {
         playerScore -= gameStuff[window.currentQuestion].tileValue
         $('.score').html(`$ ${playerScore}`)
-        //alert("Nope. That's not it.")
+        alert("Nope. That's not it.")
        
         $('#myModal').modal("hide")
         //wrong()
-        $.notify("Nope. That's not it.", "error", { position:"top center" })
+        // $('body').notify("Nope. That's not it.", "error", { position:"top center" })
         gameOver()
     }
       
